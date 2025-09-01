@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "DynamicLight",
+        "uuid": "76df7ab6-841e-11f0-8a98-40ec99f75840",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "data",
+            "uuid": "76dfc8db-841e-11f0-a147-40ec99f75840",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
