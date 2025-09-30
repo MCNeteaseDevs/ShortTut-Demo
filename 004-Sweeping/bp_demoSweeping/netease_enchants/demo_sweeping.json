@@ -1,0 +1,17 @@
+
+{
+  "netease:enchant": {
+    "identifier": "demo:sweeping",
+    "description": "enchantment.demo.sweeping",
+    "primary_slots": [
+      "sword"
+    ],
+    "cost": [
+      3,
+      6,
+      9
+    ],
+    "frequency": "rare",
+    "max_level": 3
+  }
+}
