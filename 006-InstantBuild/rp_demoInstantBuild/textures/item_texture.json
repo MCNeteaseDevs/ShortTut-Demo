@@ -1,0 +1,9 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "demo:shell_house_item": {
+            "textures": "textures/items/shell_house_item"
+        }
+    },
+    "texture_name": "atlas.items"
+}

@@ -1,0 +1,11 @@
+{
+    "format_version": "1.10",
+    "minecraft:item": {
+        "components": {
+            "minecraft:icon": "demo:shell_house_item"
+        },
+        "description": {
+            "identifier": "demo:shell_house_item"
+        }
+    }
+}

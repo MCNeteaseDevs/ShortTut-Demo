@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "InstantBuild",
+        "uuid": "39c7cec1-b0d0-11f0-917f-40ec99f75840",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "resources",
+            "uuid": "39c7cec2-b0d0-11f0-88ed-40ec99f75840",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
