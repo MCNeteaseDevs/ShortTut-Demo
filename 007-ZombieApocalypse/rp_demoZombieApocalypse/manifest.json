@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "ZombieApocalypse",
+        "uuid": "1335d058-bbe1-11f0-a869-40ec99f75840",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "resources",
+            "uuid": "1335d059-bbe1-11f0-adc7-40ec99f75840",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

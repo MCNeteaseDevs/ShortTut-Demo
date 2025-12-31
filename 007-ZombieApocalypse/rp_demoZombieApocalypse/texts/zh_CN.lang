@@ -1,0 +1,6 @@
+entity.demo:zombie1.name=增强僵尸
+item.spawn_egg.entity.demo:zombie1.name=增强僵尸生物蛋
+entity.demo:zombie2.name=增强僵尸2
+item.spawn_egg.entity.demo:zombie2.name=增强僵尸2生物蛋
+spawn.zombie1.name=增强僵尸规则1
+spawn.zombie2.name=增强僵尸规则2
