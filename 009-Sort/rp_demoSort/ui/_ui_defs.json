@@ -1,0 +1,6 @@
+{
+    "ui_defs": [
+        "ui/sort_button.json",
+        "ui/netease_editor_template_namespace.json"
+    ]
+}

@@ -1,0 +1,125 @@
+{
+   "sort_button_left_bottom@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/ui/button_borderless_light",
+      "$hover_texture" : "textures/ui/button_borderless_lighthover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+      "$pressed_button_name" : "%chest_sort_base_screen.OnSortClick",
+      "$pressed_texture" : "textures/ui/button_borderless_lightpressednohover",
+      "$texture_layer" : 2,
+      "anchor_from" : "bottom_right",
+      "anchor_to" : "bottom_right",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "controls" : [
+         {
+            "default@netease_editor_template_namespace.default" : {}
+         },
+         {
+            "hover@netease_editor_template_namespace.hover" : {}
+         },
+         {
+            "pressed@netease_editor_template_namespace.pressed" : {}
+         },
+         {
+            "button_label@netease_editor_template_namespace.button_label" : {}
+         },
+         {
+            "image" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 4,
+               "size" : [ "80.0%+0.0px", "80.0%+0.0px" ],
+               "texture" : "textures/ui/recap_glyph_color_2x",
+               "type" : "image"
+            }
+         }
+      ],
+      "default_control" : "default",
+      "hover_control" : "hover",
+      "is_handle_button_move_event" : true,
+      "layer" : 2,
+      "pressed_control" : "pressed",
+      "size" : [ 12.0, 12.0 ],
+      "offset": [ -6, -1 ],
+      "type" : "button"
+   },
+   "sort_button@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/ui/button_borderless_light",
+      "$hover_texture" : "textures/ui/button_borderless_lighthover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.0,
+      "$label_font_size" : "large",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0.0, 0.0, 0.0, 0.0 ],
+      "$pressed_button_name" : "%chest_sort_base_screen.OnSortClick",
+      "$pressed_texture" : "textures/ui/button_borderless_lightpressednohover",
+      "$texture_layer" : 2,
+      "anchor_from" : "right_middle",
+      "anchor_to" : "right_middle",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "controls" : [
+         {
+            "default@netease_editor_template_namespace.default" : {}
+         },
+         {
+            "hover@netease_editor_template_namespace.hover" : {}
+         },
+         {
+            "pressed@netease_editor_template_namespace.pressed" : {}
+         },
+         {
+            "button_label@netease_editor_template_namespace.button_label" : {}
+         },
+         {
+            "image" : {
+               "clip_direction" : "left",
+               "clip_ratio" : 0.0,
+               "layer" : 4,
+               "size" : [ "80.0%+0.0px", "80.0%+0.0px" ],
+               "texture" : "textures/ui/recap_glyph_color_2x",
+               "type" : "image"
+            }
+         }
+      ],
+      "default_control" : "default",
+      "hover_control" : "hover",
+      "is_handle_button_move_event" : true,
+      "layer" : 2,
+      "pressed_control" : "pressed",
+      "size" : [ 12.0, 12.0 ],
+      "offset": [ -20, -1 ],
+      "type" : "button"
+   },
+   "namespace" : "sort_button"
+}
