@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "demo:crafter_top_triggered": {
+            "textures": "textures/crafter_top_triggered"
+        },
+        "demo:crafting_table_side": {
+            "textures": "textures/crafting_table_side"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

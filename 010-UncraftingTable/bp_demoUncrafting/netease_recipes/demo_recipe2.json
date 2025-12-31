@@ -1,0 +1,32 @@
+{
+    "format_version": "1.20.10",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "demo:recipe2"
+        },
+        "key": {
+            "A": {
+                "data": 0,
+                "item": "minecraft:apple"
+            },
+            "B": {
+                "data": 0,
+                "item": "minecraft:stick"
+            }
+        },
+        "pattern": [
+            "AB"
+        ],
+        "result": {
+            "count": 1,
+            "data": 0,
+            "item": "minecraft:diamond_sword"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "unlock": {
+            "context": "AlwaysUnlocked"
+        }
+    }
+}

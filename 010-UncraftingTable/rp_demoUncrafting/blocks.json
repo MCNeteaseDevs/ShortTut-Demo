@@ -1,0 +1,14 @@
+{
+    "demo:uncrafting_table": {
+        "textures": {
+            "down": "demo:crafter_top_triggered",
+            "side": "demo:crafting_table_side",
+            "up": "demo:crafter_top_triggered"
+        }
+    },
+    "format_version": [
+        1,
+        1,
+        0
+    ]
+}
