@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "HealthRegen",
+        "uuid": "ae1e55e8-f228-11f0-a2bf-40ec99f75840",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "data",
+            "uuid": "ae1e7cf0-f228-11f0-8c37-40ec99f75840",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}

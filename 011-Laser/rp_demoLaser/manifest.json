@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "Laser",
+        "uuid": "edb3713b-e88b-11f0-8e69-c4bde5c65e7a",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "resources",
+            "uuid": "edb3713c-e88b-11f0-b4a3-c4bde5c65e7a",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
