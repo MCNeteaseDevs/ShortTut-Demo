@@ -1,0 +1,12 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_data": {
+        "demo:custom_dirt": {
+            "textures": "textures/blocks/custom_dirt"
+        },
+        "uUwFYHZV": {
+            "textures": "textures/entity/chair"
+        }
+    },
+    "texture_name": "atlas.terrain"
+}

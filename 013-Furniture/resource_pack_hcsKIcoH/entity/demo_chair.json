@@ -1,0 +1,20 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.chair"
+            },
+            "identifier": "demo:chair",
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "textures": {
+                "default": "textures/entity/chair"
+            }
+        }
+    }
+}

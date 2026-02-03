@@ -1,0 +1,16 @@
+{
+    "demo:chair": {
+        "client_entity": {
+            "block_icon": "uUwFYHZV",
+            "destoryed_textures": "uUwFYHZV",
+            "hand_model_use_client_entity": true,
+            "identifier": "demo:chair"
+        },
+        "textures": "demo:custom_dirt"
+    },
+    "format_version": [
+        1,
+        1,
+        0
+    ]
+}
