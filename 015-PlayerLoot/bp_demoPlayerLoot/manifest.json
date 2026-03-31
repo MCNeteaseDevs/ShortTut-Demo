@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "PlayerLoot",
+        "uuid": "80db08f4-2067-11f1-a447-244bfe6e9cae",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "data",
+            "uuid": "80dba7ab-2067-11f1-b8da-244bfe6e9cae",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
