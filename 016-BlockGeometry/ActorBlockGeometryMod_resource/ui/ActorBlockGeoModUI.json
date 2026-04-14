@@ -1,0 +1,427 @@
+{
+   "button0@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.409999966621399,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "组合！",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%ActorBlockGeoModUI.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@ActorBlockGeoModUI.default" : {}
+         },
+         {
+            "hover@ActorBlockGeoModUI.hover" : {}
+         },
+         {
+            "pressed@ActorBlockGeoModUI.pressed" : {}
+         },
+         {
+            "button_label@ActorBlockGeoModUI.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 11,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 4.50, 13.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 51, 32 ],
+      "visible" : true
+   },
+   "button1@common.button" : {
+      "$control_alpha" : 1.0,
+      "$default_texture" : "textures/netease/common/button/default",
+      "$hover_texture" : "textures/netease/common/button/hover",
+      "$is_new_nine_slice" : false,
+      "$label_color" : [ 1, 1, 1 ],
+      "$label_font_scale_factor" : 1.409999966621399,
+      "$label_font_size" : "normal",
+      "$label_layer" : 3,
+      "$label_offset" : [ 0, 0 ],
+      "$label_text" : "解除！",
+      "$nine_slice_buttom" : 0,
+      "$nine_slice_left" : 0,
+      "$nine_slice_right" : 0,
+      "$nine_slice_top" : 0,
+      "$nineslice_size" : [ 0, 0, 0, 0 ],
+      "$pressed_button_name" : "%ActorBlockGeoModUI.click",
+      "$pressed_texture" : "textures/netease/common/button/pressed",
+      "$texture_layer" : 2,
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "bindings" : [
+         {
+            "binding_collection_name" : "",
+            "binding_condition" : "always_when_visible",
+            "binding_type" : "collection_details"
+         }
+      ],
+      "button_mappings" : [],
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "default@ActorBlockGeoModUI.default" : {}
+         },
+         {
+            "hover@ActorBlockGeoModUI.hover" : {}
+         },
+         {
+            "pressed@ActorBlockGeoModUI.pressed" : {}
+         },
+         {
+            "button_label@ActorBlockGeoModUI.button_label" : {}
+         }
+      ],
+      "draggable" : "not_draggable",
+      "enabled" : true,
+      "is_handle_button_move_event" : true,
+      "layer" : 15,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 4.50, 43.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 51, 32 ],
+      "visible" : true
+   },
+   "buttonPanel" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_right",
+      "anchor_to" : "top_right",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "button0@ActorBlockGeoModUI.button0" : {}
+         },
+         {
+            "button1@ActorBlockGeoModUI.button1" : {}
+         }
+      ],
+      "enabled" : true,
+      "layer" : 10,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ "0.0%+20.0px", "0.0%+29.0px" ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ 100, 100 ],
+      "type" : "panel",
+      "visible" : false
+   },
+   "button_label" : {
+      "alpha" : "$control_alpha",
+      "color" : "$label_color",
+      "font_scale_factor" : "$label_font_scale_factor",
+      "font_size" : "$label_font_size",
+      "font_type" : "smooth",
+      "layer" : "$label_layer",
+      "max_size" : [ "100%", "100%" ],
+      "offset" : "$label_offset",
+      "shadow" : false,
+      "text" : "$label_text",
+      "text_alignment" : "center",
+      "type" : "label"
+   },
+   "default" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$default_texture",
+      "type" : "image"
+   },
+   "descriptionPanel" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_right",
+      "anchor_to" : "top_right",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "controls" : [
+         {
+            "descriptions@ActorBlockGeoModUI.descriptions" : {}
+         },
+         {
+            "label0@ActorBlockGeoModUI.label0" : {}
+         },
+         {
+            "label4@ActorBlockGeoModUI.label4" : {}
+         },
+         {
+            "label2@ActorBlockGeoModUI.label2" : {}
+         },
+         {
+            "label1@ActorBlockGeoModUI.label1" : {}
+         },
+         {
+            "label3@ActorBlockGeoModUI.label3" : {}
+         },
+         {
+            "label5@ActorBlockGeoModUI.label5" : {}
+         }
+      ],
+      "enabled" : true,
+      "layer" : 0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 2.0, 3.50 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "size" : [ "default", "default" ],
+      "type" : "panel",
+      "visible" : false
+   },
+   "descriptions" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.007843137254901961, 0.02352941176470588 ],
+      "enabled" : true,
+      "font_scale_factor" : 1.0,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 1,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 30.50, 3.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "default", "default" ],
+      "text" : "欢迎来到组合方块模型Mod",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "hover" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$hover_texture",
+      "type" : "image"
+   },
+   "label0" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 2,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1.50, 16.0 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "default", "default" ],
+      "text" : "1. 使用你手中的组合方块，放置在地上。\n",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "label1" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 7,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1, 39 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "100.0%sm+0.0px", "100.0%sm+11.0px" ],
+      "text" : "3. 点击组合按钮，这个方块会将它周围的5X5X2的区域内的方块组合成一个方块组合。",
+      "text_alignment" : "left",
+      "type" : "label",
+      "visible" : true
+   },
+   "label2" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 4,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1, 59 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "100.0%sm+0.0px", "100.0%sm+45.0px" ],
+      "text" : "4. 将准心对准这个方块组合，屏幕下方会显示“上船”按钮，点击后，您可以坐上这个方块组合，通过方向键按钮移动，来一场有趣的旅行。",
+      "text_alignment" : "left",
+      "type" : "label",
+      "visible" : true
+   },
+   "label3" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 9,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1.0, 86 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "100.0%sm+0.0px", "100.0%sm+15.0px" ],
+      "text" : "5. 点击“解除”按钮，则会在玩家当前位置，把方块组合还原为原来的方块。",
+      "text_alignment" : "left",
+      "type" : "label",
+      "visible" : true
+   },
+   "label4" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 3,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1, 27 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "default", "default" ],
+      "text" : "2. 点击该方块进行交互，屏幕右侧会显示“组合”和“解除”按钮。\n",
+      "text_alignment" : "center",
+      "type" : "label",
+      "visible" : true
+   },
+   "label5" : {
+      "alpha" : 1.0,
+      "anchor_from" : "top_left",
+      "anchor_to" : "top_left",
+      "clip_offset" : [ 0, 0 ],
+      "clips_children" : false,
+      "color" : [ 1.0, 0.0, 0.0 ],
+      "enabled" : true,
+      "font_scale_factor" : 0.8199999928474426,
+      "font_size" : "normal",
+      "font_type" : "smooth",
+      "layer" : 9,
+      "line_padding" : 0.0,
+      "max_size" : [ 0, 0 ],
+      "min_size" : [ 0, 0 ],
+      "offset" : [ 1.0, 105 ],
+      "priority" : 0,
+      "propagate_alpha" : false,
+      "shadow" : false,
+      "size" : [ "100.0%sm+0.0px", "100.0%sm+15.0px" ],
+      "text" : "6.解除方块组合后，如果需要再组合，则要再点击组合方块进行交互，然后点击“组合”按钮，才能再次组合。",
+      "text_alignment" : "left",
+      "type" : "label",
+      "visible" : true
+   },
+   "main" : {
+      "absorbs_input" : true,
+      "always_accepts_input" : false,
+      "controls" : [
+         {
+            "descriptionPanel@ActorBlockGeoModUI.descriptionPanel" : {}
+         },
+         {
+            "buttonPanel@ActorBlockGeoModUI.buttonPanel" : {}
+         }
+      ],
+      "force_render_below" : false,
+      "is_showing_menu" : true,
+      "render_game_behind" : true,
+      "render_only_when_topmost" : true,
+      "should_steal_mouse" : false,
+      "type" : "screen"
+   },
+   "namespace" : "ActorBlockGeoModUI",
+   "pressed" : {
+      "alpha" : "$control_alpha",
+      "is_new_nine_slice" : "$is_new_nine_slice",
+      "layer" : "$texture_layer",
+      "nine_slice_buttom" : "$nine_slice_buttom",
+      "nine_slice_left" : "$nine_slice_left",
+      "nine_slice_right" : "$nine_slice_right",
+      "nine_slice_top" : "$nine_slice_top",
+      "nineslice_size" : "$nineslice_size",
+      "texture" : "$pressed_texture",
+      "type" : "image"
+   }
+}

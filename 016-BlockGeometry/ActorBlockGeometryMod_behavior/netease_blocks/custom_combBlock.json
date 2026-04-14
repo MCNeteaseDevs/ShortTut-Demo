@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "actorblockgeometrymod:custom_combblock"
+    },
+    "components": {
+	//"netease:block_entity": {
+	//  "tick": true,
+    //  "movable": false
+	//},
+	  "netease:aabb": {
+	    "collision": {
+	      "min": [0.0, 0.0, 0.0],
+		  "max": [1.0, 1.0, 1.0]
+		}
+	  },
+	  "netease:solid": {
+	    "value": true
+	  },
+	  "minecraft:block_light_absorption":{
+		"value": 0
+	  },
+	  "netease:face_directional": {
+		"type": "facing_direction"
+	  }
+    }
+  }
+}

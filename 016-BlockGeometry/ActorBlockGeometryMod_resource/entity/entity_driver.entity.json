@@ -1,0 +1,20 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "actorblockgeometrymod:entity_driver",
+      "materials": {
+        "default": "skeleton"
+      },
+      "textures": {
+        "default": "textures/entity/skeleton/skeleton"
+      },
+      // "geometry": {
+      //   "default": "geometry.skeleton.v1.8"
+      // },
+      "render_controllers": [
+        "controller.render.skeleton"
+      ]
+    }
+  }
+}

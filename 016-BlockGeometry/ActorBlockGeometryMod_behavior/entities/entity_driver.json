@@ -1,0 +1,77 @@
+{
+  "minecraft:entity": {
+      "format_version": "1.16.0",
+      "description": {
+          "identifier": "actorblockgeometrymod:entity_driver",
+          "is_summonable": false,
+          "is_spawnable": false,
+          "is_experimental": false
+
+      },
+      "components": {
+           "minecraft:behavior.rise_to_liquid_level": {
+            "priority": 0,
+            "liquid_y_offset": 0.6,
+            "rise_delta": 0.05,
+            "sink_delta": 0.01
+        },
+        "minecraft:floats_in_liquid":{},
+        "minecraft:underwater_movement": {
+            "value": 0.15
+        },
+        "minecraft:navigation.walk": {
+            "can_sink": false
+        },
+        "minecraft:rideable": {
+            "seat_count": 1,
+            "family_types": [
+                "player"
+            ],
+            "interact_text": "action.interact.ride.boat",
+            "seats": [{
+                "position": [0, 0.5, 1],
+                "min_rider_count": 0,
+                "max_rider_count": 1
+            }
+            ]
+        },
+        "minecraft:damage_sensor": {
+          "triggers": {
+              "cause": "all",
+              "deals_damage": false
+          }
+       },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:movement": {
+            "value": 0.15
+        },
+        "minecraft:is_stackable": {
+       },
+       "minecraft:health": {
+        "value": 5,
+        "max": 5
+       },
+        "minecraft:movement.basic": {},
+        "minecraft:collision_box": {
+            "width": 5,
+            "height": 2
+        },
+        "minecraft:physics": {
+        },
+        "minecraft:knockback_resistance": {
+            "value": 1
+        },
+        "minecraft:push_through": {
+            "value": 1
+        },
+        "minecraft:pushable": {
+          "is_pushable": false,
+          "is_pushable_by_piston": false
+        },
+        "minecraft:break_blocks": {
+          "breakable_blocks": ["waterlily"
+          ]
+       }
+    }
+  }
+}
