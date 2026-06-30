@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "PlayerModel",
+        "uuid": "f2c99f3e-398e-11f1-837a-40ec99f7583d",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "data",
+            "uuid": "f2ca4fc6-398e-11f1-8a47-40ec99f7583d",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
