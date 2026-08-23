@@ -1,0 +1,33 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+            "geometry": {
+                "default": "geometry.chair"
+            },
+            "identifier": "demo:chair",
+            "animations": {
+                "spin": "animation.chair.spin"
+            },
+            "materials": {
+                "default": "entity_alphatest"
+            },
+            "render_controllers": [
+                "controller.render.default"
+            ],
+            "scripts": {
+                "initialize": [
+                    "variable.chair_spin = 0.0;"
+                ],
+                "animate": [
+                    {
+                        "spin": "variable.chair_spin > 0.0"
+                    }
+                ]
+            },
+            "textures": {
+                "default": "textures/entity/chair"
+            }
+        }
+    }
+}

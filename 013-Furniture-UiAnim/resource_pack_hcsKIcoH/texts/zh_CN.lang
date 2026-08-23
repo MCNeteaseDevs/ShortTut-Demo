@@ -1,0 +1,3 @@
+entity.demo:chair.name=chair
+item.spawn_egg.entity.demo:chair.name=
+tile.demo:chair.name=椅子

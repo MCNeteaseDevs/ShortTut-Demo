@@ -1,0 +1,262 @@
+{
+    "namespace": "spin_screen",
+    "main": {
+        "type": "screen",
+        "controls": [
+            {
+                "background": {
+                    "type": "image",
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "size": [
+                        260,
+                        150
+                    ],
+                    "layer": 1,
+                    "texture": "textures/ui/dialog_background_opaque",
+                    "controls": [
+                        {
+                            "title": {
+                                "type": "label",
+                                "anchor_from": "top_middle",
+                                "anchor_to": "top_middle",
+                                "offset": [
+                                    0,
+                                    20
+                                ],
+                                "size": [
+                                    220,
+                                    24
+                                ],
+                                "layer": 2,
+                                "font_type": "smooth",
+                                "font_size": "large",
+                                "text": "椅子控制",
+                                "text_alignment": "center"
+                            }
+                        },
+                        {
+                            "turn_on@common.button": {
+                                "type": "button",
+                                "$control_alpha": 1.0,
+                                "$default_texture": "textures/netease/common/button/default",
+                                "$hover_texture": "textures/netease/common/button/hover",
+                                "$pressed_texture": "textures/netease/common/button/pressed",
+                                "$is_new_nine_slice": true,
+                                "$label_text": "旋转",
+                                "$label_color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "$label_font_size": "normal",
+                                "$label_font_scale_factor": 1.0,
+                                "$label_layer": 3,
+                                "$label_offset": [
+                                    0,
+                                    0
+                                ],
+                                "$texture_layer": 2,
+                                "$pressed_button_name": "#turn_on",
+                                "$nine_slice_left": 1,
+                                "$nine_slice_right": 1,
+                                "$nine_slice_top": 1,
+                                "$nine_slice_buttom": 1,
+                                "$nineslice_size": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    -55,
+                                    0
+                                ],
+                                "size": [
+                                    90,
+                                    36
+                                ],
+                                "layer": 2,
+                                "default_control": "default",
+                                "hover_control": "hover",
+                                "pressed_control": "pressed",
+                                "is_handle_button_move_event": true,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ],
+                                "controls": [
+                                    {
+                                        "default@netease_editor_template_namespace.default": {}
+                                    },
+                                    {
+                                        "hover@netease_editor_template_namespace.hover": {}
+                                    },
+                                    {
+                                        "pressed@netease_editor_template_namespace.pressed": {}
+                                    },
+                                    {
+                                        "button_label@netease_editor_template_namespace.button_label": {
+                                            "font_type": "smooth"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "turn_off@common.button": {
+                                "type": "button",
+                                "$control_alpha": 1.0,
+                                "$default_texture": "textures/netease/common/button/default",
+                                "$hover_texture": "textures/netease/common/button/hover",
+                                "$pressed_texture": "textures/netease/common/button/pressed",
+                                "$is_new_nine_slice": true,
+                                "$label_text": "停止",
+                                "$label_color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "$label_font_size": "normal",
+                                "$label_font_scale_factor": 1.0,
+                                "$label_layer": 3,
+                                "$label_offset": [
+                                    0,
+                                    0
+                                ],
+                                "$texture_layer": 2,
+                                "$pressed_button_name": "#turn_off",
+                                "$nine_slice_left": 1,
+                                "$nine_slice_right": 1,
+                                "$nine_slice_top": 1,
+                                "$nine_slice_buttom": 1,
+                                "$nineslice_size": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    55,
+                                    0
+                                ],
+                                "size": [
+                                    90,
+                                    36
+                                ],
+                                "layer": 2,
+                                "default_control": "default",
+                                "hover_control": "hover",
+                                "pressed_control": "pressed",
+                                "is_handle_button_move_event": true,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ],
+                                "controls": [
+                                    {
+                                        "default@netease_editor_template_namespace.default": {}
+                                    },
+                                    {
+                                        "hover@netease_editor_template_namespace.hover": {}
+                                    },
+                                    {
+                                        "pressed@netease_editor_template_namespace.pressed": {}
+                                    },
+                                    {
+                                        "button_label@netease_editor_template_namespace.button_label": {
+                                            "font_type": "smooth"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "close@common.button": {
+                                "type": "button",
+                                "$control_alpha": 1.0,
+                                "$default_texture": "textures/netease/common/button/default",
+                                "$hover_texture": "textures/netease/common/button/hover",
+                                "$pressed_texture": "textures/netease/common/button/pressed",
+                                "$is_new_nine_slice": true,
+                                "$label_text": "关闭",
+                                "$label_color": [
+                                    1.0,
+                                    1.0,
+                                    1.0
+                                ],
+                                "$label_font_size": "normal",
+                                "$label_font_scale_factor": 1.0,
+                                "$label_layer": 3,
+                                "$label_offset": [
+                                    0,
+                                    0
+                                ],
+                                "$texture_layer": 2,
+                                "$pressed_button_name": "#close",
+                                "$nine_slice_left": 1,
+                                "$nine_slice_right": 1,
+                                "$nine_slice_top": 1,
+                                "$nine_slice_buttom": 1,
+                                "$nineslice_size": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "anchor_from": "bottom_middle",
+                                "anchor_to": "bottom_middle",
+                                "offset": [
+                                    0,
+                                    -18
+                                ],
+                                "size": [
+                                    90,
+                                    30
+                                ],
+                                "layer": 2,
+                                "default_control": "default",
+                                "hover_control": "hover",
+                                "pressed_control": "pressed",
+                                "is_handle_button_move_event": true,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ],
+                                "controls": [
+                                    {
+                                        "default@netease_editor_template_namespace.default": {}
+                                    },
+                                    {
+                                        "hover@netease_editor_template_namespace.hover": {}
+                                    },
+                                    {
+                                        "pressed@netease_editor_template_namespace.pressed": {}
+                                    },
+                                    {
+                                        "button_label@netease_editor_template_namespace.button_label": {
+                                            "font_type": "smooth"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}
