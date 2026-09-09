@@ -269,7 +269,6 @@
                                     0
                                 ],
                                 "layer": 3,
-                                "font_size": "small",
                                 "text": "#slot.amount",
                                 "text_alignment": "right",
                                 "property_bag": {
@@ -304,7 +303,6 @@
                         {
                             "binding_name_override": "#visible",
                             "binding_collection_name": "backpack_grid",
-                            "binding_condition": "always_when_visible",
                             "binding_type": "collection",
                             "binding_name": "#slot.selected"
                         }
