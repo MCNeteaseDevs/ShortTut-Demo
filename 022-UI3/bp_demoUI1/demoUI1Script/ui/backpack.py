@@ -87,6 +87,7 @@ class BackpackScreen(ScreenNode):
     # ---------- 按钮事件 ----------
 
     @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
+    #或 @ViewBinder.binding(ViewBinder.BF_ButtonClickUp,"#button1")
     def on_slot_click(self, args):
         # 绑定名使用 %backpack.on_slot_click，所以这里不写绑定名，函数名保持一致
         # 配置了 collection_details 的按钮，参数里会带上被点击格子的下标
