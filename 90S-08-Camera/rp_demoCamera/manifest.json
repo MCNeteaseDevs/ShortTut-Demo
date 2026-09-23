@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "Camera",
+        "uuid": "c36f3c41-b1aa-11f1-9575-c4bde5c65e7a",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "resources",
+            "uuid": "c36f3c42-b1aa-11f1-90da-c4bde5c65e7a",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
