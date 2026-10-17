@@ -1,0 +1,407 @@
+{
+    "namespace": "easing_compare",
+    "offset_linear": {
+        "anim_type": "offset",
+        "duration": 2.5,
+        "easing": "linear",
+        "from": [
+            0,
+            56
+        ],
+        "to": [
+            0,
+            -24
+        ],
+        "next": ""
+    },
+    "offset_out_cubic": {
+        "anim_type": "offset",
+        "duration": 2.5,
+        "easing": "out_cubic",
+        "from": [
+            0,
+            56
+        ],
+        "to": [
+            0,
+            -24
+        ],
+        "next": ""
+    },
+    "offset_in_cubic": {
+        "anim_type": "offset",
+        "duration": 2.5,
+        "easing": "in_cubic",
+        "from": [
+            0,
+            56
+        ],
+        "to": [
+            0,
+            -24
+        ],
+        "next": ""
+    },
+    "offset_out_back": {
+        "anim_type": "offset",
+        "duration": 2.5,
+        "easing": "out_back",
+        "from": [
+            0,
+            56
+        ],
+        "to": [
+            0,
+            -24
+        ],
+        "next": ""
+    },
+    "main": {
+        "type": "screen",
+        "is_showing_menu": true,
+        "controls": [
+            {
+                "root": {
+                    "type": "panel",
+                    "size": [
+                        "100%",
+                        "100%"
+                    ],
+                    "anchor_from": "center",
+                    "anchor_to": "center",
+                    "layer": 1,
+                    "controls": [
+                        {
+                            "linearColumn": {
+                                "type": "panel",
+                                "size": [
+                                    108,
+                                    180
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    -174,
+                                    -12
+                                ],
+                                "layer": 2,
+                                "controls": [
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "text": "linear",
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "offset": [
+                                                0,
+                                                8
+                                            ],
+                                            "text_alignment": "center",
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "mover": {
+                                            "type": "image",
+                                            "texture": "textures/netease/common/button/default",
+                                            "size": [
+                                                100,
+                                                36
+                                            ],
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": "@easing_compare.offset_linear",
+                                            "layer": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "outCubicColumn": {
+                                "type": "panel",
+                                "size": [
+                                    108,
+                                    180
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    -58,
+                                    -12
+                                ],
+                                "layer": 2,
+                                "controls": [
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "text": "out_cubic",
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "offset": [
+                                                0,
+                                                8
+                                            ],
+                                            "text_alignment": "center",
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "mover": {
+                                            "type": "image",
+                                            "texture": "textures/netease/common/button/default",
+                                            "size": [
+                                                100,
+                                                36
+                                            ],
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": "@easing_compare.offset_out_cubic",
+                                            "layer": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "inCubicColumn": {
+                                "type": "panel",
+                                "size": [
+                                    108,
+                                    180
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    58,
+                                    -12
+                                ],
+                                "layer": 2,
+                                "controls": [
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "text": "in_cubic",
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "offset": [
+                                                0,
+                                                8
+                                            ],
+                                            "text_alignment": "center",
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "mover": {
+                                            "type": "image",
+                                            "texture": "textures/netease/common/button/default",
+                                            "size": [
+                                                100,
+                                                36
+                                            ],
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": "@easing_compare.offset_in_cubic",
+                                            "layer": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "outBackColumn": {
+                                "type": "panel",
+                                "size": [
+                                    108,
+                                    180
+                                ],
+                                "anchor_from": "center",
+                                "anchor_to": "center",
+                                "offset": [
+                                    174,
+                                    -12
+                                ],
+                                "layer": 2,
+                                "controls": [
+                                    {
+                                        "title": {
+                                            "type": "label",
+                                            "text": "out_back",
+                                            "anchor_from": "top_middle",
+                                            "anchor_to": "top_middle",
+                                            "offset": [
+                                                0,
+                                                8
+                                            ],
+                                            "text_alignment": "center",
+                                            "layer": 2
+                                        }
+                                    },
+                                    {
+                                        "mover": {
+                                            "type": "image",
+                                            "texture": "textures/netease/common/button/default",
+                                            "size": [
+                                                100,
+                                                36
+                                            ],
+                                            "anchor_from": "center",
+                                            "anchor_to": "center",
+                                            "offset": "@easing_compare.offset_out_back",
+                                            "layer": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "replayButton@common.button": {
+                                "type": "button",
+                                "anchor_from": "bottom_middle",
+                                "anchor_to": "bottom_middle",
+                                "offset": [
+                                    -70,
+                                    -18
+                                ],
+                                "size": [
+                                    120,
+                                    40
+                                ],
+                                "layer": 3,
+                                "default_control": "default",
+                                "hover_control": "hover",
+                                "pressed_control": "pressed",
+                                "is_handle_button_move_event": true,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ],
+                                "controls": [
+                                    {
+                                        "default@netease_editor_template_namespace.default": {}
+                                    },
+                                    {
+                                        "hover@netease_editor_template_namespace.hover": {}
+                                    },
+                                    {
+                                        "pressed@netease_editor_template_namespace.pressed": {}
+                                    },
+                                    {
+                                        "button_label@netease_editor_template_namespace.button_label": {
+                                            "font_type": "smooth"
+                                        }
+                                    }
+                                ],
+                                "$control_alpha": 1.0,
+                                "$default_texture": "textures/netease/common/button/default",
+                                "$hover_texture": "textures/netease/common/button/hover",
+                                "$pressed_texture": "textures/netease/common/button/pressed",
+                                "$pressed_button_name": "#replay_easing",
+                                "$label_text": "重播",
+                                "$label_color": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "$label_font_size": "large",
+                                "$label_layer": 3,
+                                "$label_offset": [
+                                    0,
+                                    0
+                                ],
+                                "$texture_layer": 2,
+                                "$is_new_nine_slice": false,
+                                "$nine_slice_buttom": 0,
+                                "$nine_slice_left": 0,
+                                "$nine_slice_right": 0,
+                                "$nine_slice_top": 0,
+                                "$nineslice_size": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        },
+                        {
+                            "closeButton@common.button": {
+                                "type": "button",
+                                "anchor_from": "bottom_middle",
+                                "anchor_to": "bottom_middle",
+                                "offset": [
+                                    70,
+                                    -18
+                                ],
+                                "size": [
+                                    120,
+                                    40
+                                ],
+                                "layer": 3,
+                                "default_control": "default",
+                                "hover_control": "hover",
+                                "pressed_control": "pressed",
+                                "is_handle_button_move_event": true,
+                                "bindings": [
+                                    {
+                                        "binding_type": "collection_details",
+                                        "binding_collection_name": "",
+                                        "binding_condition": "always_when_visible"
+                                    }
+                                ],
+                                "controls": [
+                                    {
+                                        "default@netease_editor_template_namespace.default": {}
+                                    },
+                                    {
+                                        "hover@netease_editor_template_namespace.hover": {}
+                                    },
+                                    {
+                                        "pressed@netease_editor_template_namespace.pressed": {}
+                                    },
+                                    {
+                                        "button_label@netease_editor_template_namespace.button_label": {
+                                            "font_type": "smooth"
+                                        }
+                                    }
+                                ],
+                                "$control_alpha": 1.0,
+                                "$default_texture": "textures/netease/common/button/default",
+                                "$hover_texture": "textures/netease/common/button/hover",
+                                "$pressed_texture": "textures/netease/common/button/pressed",
+                                "$pressed_button_name": "#close_easing",
+                                "$label_text": "关闭",
+                                "$label_color": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "$label_font_size": "large",
+                                "$label_layer": 3,
+                                "$label_offset": [
+                                    0,
+                                    0
+                                ],
+                                "$texture_layer": 2,
+                                "$is_new_nine_slice": false,
+                                "$nine_slice_buttom": 0,
+                                "$nine_slice_left": 0,
+                                "$nine_slice_right": 0,
+                                "$nine_slice_top": 0,
+                                "$nineslice_size": [
+                                    0,
+                                    0,
+                                    0,
+                                    0
+                                ]
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

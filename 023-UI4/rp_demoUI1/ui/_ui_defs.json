@@ -1,0 +1,8 @@
+{
+    "ui_defs": [
+        "ui/example_animation.json",
+        "ui/easing_compare.json",
+        "ui/backpack.json",
+        "ui/example.json"
+    ]
+}

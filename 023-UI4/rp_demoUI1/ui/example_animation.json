@@ -1,0 +1,47 @@
+{
+    "namespace": "example_animation",
+    "panel_enter_alpha": {
+        "anim_type": "alpha",
+        "duration": 0.2,
+        "easing": "out_cubic",
+        "from": 0,
+        "to": 1,
+        "next": ""
+    },
+    "panel_enter_offset": {
+        "anim_type": "offset",
+        "duration": 0.16,
+        "easing": "out_cubic",
+        "from": [
+            0,
+            12
+        ],
+        "to": [
+            0,
+            -2
+        ],
+        "next": "@example_animation.panel_enter_settle"
+    },
+    "panel_enter_settle": {
+        "anim_type": "offset",
+        "duration": 0.08,
+        "easing": "out_cubic",
+        "from": [
+            0,
+            -2
+        ],
+        "to": [
+            0,
+            0
+        ],
+        "next": ""
+    },
+    "backpack_enter_alpha": {
+        "anim_type": "alpha",
+        "duration": 0.2,
+        "easing": "out_cubic",
+        "from": 0,
+        "to": 0.95,
+        "next": ""
+    }
+}
