@@ -1,0 +1,26 @@
+{
+    "format_version": 1,
+    "header": {
+        "description": "By Dust",
+        "name": "Potion",
+        "uuid": "70978cae-cc7d-11f1-a7f3-c4bde5c65e7a",
+        "min_engine_version":[ 1, 18, 0 ],
+        "version": [
+            0,
+            0,
+            1
+        ]
+    },
+    "modules": [
+        {
+            "description": "By Dust",
+            "type": "resources",
+            "uuid": "70978caf-cc7d-11f1-87b1-c4bde5c65e7a",
+            "version": [
+                0,
+                0,
+                1
+            ]
+        }
+    ]
+}
