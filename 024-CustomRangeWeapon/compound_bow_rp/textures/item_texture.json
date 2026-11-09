@@ -1,0 +1,12 @@
+{
+  "resource_pack_name": "compound_bow",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "demo:compound_bow": {
+      "textures": "textures/items/compound_bow"
+    },
+    "demo:compound_arrow": {
+      "textures": "textures/items/compound_arrow"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.compound_bow.1st_fix_offset": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"rightItem": {
+					"position":  ["q.mod.compound_bow_fix_offset_x",0, "q.mod.compound_bow_fix_offset_z"]
+				},
+				"leftItem": {
+					"position":  ["q.mod.compound_bow_fix_offset_x",0, "q.mod.compound_bow_fix_offset_z"]
+				}
+			}
+		}
+	}
+}

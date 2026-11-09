@@ -1,0 +1,64 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.compound_bow.general": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [
+            {
+              "compound_bow_1st_idle": "c.is_first_person??v.is_first_person"
+            },
+            {
+              "compound_bow_3rd_idle": "!(c.is_first_person??v.is_first_person)"
+            }
+          ],
+          "transitions": [
+            {
+              "aim": "q.mod.compound_bow_aim > 0"
+            },
+            {
+              "shoot": "q.mod.compound_bow_shoot > 0"
+            }
+          ]
+        },
+        "aim": {
+          "animations": [
+            {
+              "compound_bow_1st_aim": "c.is_first_person??v.is_first_person"
+            },
+            {
+              "compound_bow_3rd_aim": "!(c.is_first_person??v.is_first_person)"
+            }
+          ],
+          "transitions": [
+            {
+              "idle": "q.mod.compound_bow_aim <= 0 && q.mod.compound_bow_shoot <= 0"
+            },
+            {
+              "shoot": "q.mod.compound_bow_shoot > 0"
+            }
+          ]
+        },
+        "shoot": {
+          "animations": [
+            {
+              "compound_bow_1st_shoot": "c.is_first_person??v.is_first_person"
+            },
+            {
+              "compound_bow_3rd_shoot": "!(c.is_first_person??v.is_first_person)"
+            }
+          ],
+          "transitions": [
+            {
+              "idle": "q.mod.compound_bow_shoot <= 0 && q.mod.compound_bow_aim <= 0"
+            },
+            {
+              "aim": "q.mod.compound_bow_shoot <= 0 && q.mod.compound_bow_aim > 0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

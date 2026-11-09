@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "demo:compound_bow",
+      "materials": {
+        "default": "entity_alphablend",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/entity/compound_bow",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.compound_bow",
+        "arm": "geometry.compound_bow_arm"
+      },
+      "animations": {
+        "compound_bow_controller": "controller.animation.compound_bow.general",
+        "compound_bow_deployment": "animation.compound_bow.deployment",
+        "compound_bow_1st_idle": "animation.compound_bow.1st_idle",
+        "compound_bow_3rd_idle": "animation.compound_bow.3rd_idle",
+        "compound_bow_1st_aim": "animation.compound_bow.1st_aim",
+        "compound_bow_3rd_aim": "animation.compound_bow.3rd_aim",
+        "compound_bow_1st_shoot": "animation.compound_bow.1st_shoot",
+        "compound_bow_3rd_shoot": "animation.compound_bow.3rd_shoot",
+        "compound_bow_fix_1st": "animation.compound_bow.fix_1st",
+        "compound_bow_fix_3rd": "animation.compound_bow.fix_3rd"
+      },
+      "scripts": {
+        "animate": [
+          "compound_bow_controller",
+          "compound_bow_deployment",
+          {
+            "compound_bow_fix_1st": "c.is_first_person"
+          },
+          {
+            "compound_bow_fix_3rd": "!c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": [
+        "controller.render.default"
+      ]
+    }
+  }
+}

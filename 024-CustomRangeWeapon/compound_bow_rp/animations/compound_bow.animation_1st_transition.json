@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.compound_bow.1st_transition": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.2,
+			"override_previous_animation": true,
+			"anim_time_update": "q.anim_time + q.delta_time * q.mod.compound_bow_speed_amplifier",
+			"bones": {
+				"compound_bow": {
+					"rotation": {
+						"0.0": ["q.mod.compound_bow_trans_1st_item_rot_s_x", "q.mod.compound_bow_trans_1st_item_rot_s_y", "q.mod.compound_bow_trans_1st_item_rot_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_item_rot_e_x", "q.mod.compound_bow_trans_1st_item_rot_e_y", "q.mod.compound_bow_trans_1st_item_rot_e_z"]
+					},
+					"position": {
+						"0.0": ["q.mod.compound_bow_trans_1st_item_pos_s_x", "q.mod.compound_bow_trans_1st_item_pos_s_y", "q.mod.compound_bow_trans_1st_item_pos_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_item_pos_e_x", "q.mod.compound_bow_trans_1st_item_pos_e_y", "q.mod.compound_bow_trans_1st_item_pos_e_z"]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": ["q.mod.compound_bow_trans_1st_right_rot_s_x", "q.mod.compound_bow_trans_1st_right_rot_s_y", "q.mod.compound_bow_trans_1st_right_rot_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_right_rot_e_x", "q.mod.compound_bow_trans_1st_right_rot_e_y", "q.mod.compound_bow_trans_1st_right_rot_e_z"]
+					},
+					"position": {
+						"0.0": ["q.mod.compound_bow_trans_1st_right_pos_s_x", "q.mod.compound_bow_trans_1st_right_pos_s_y", "q.mod.compound_bow_trans_1st_right_pos_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_right_pos_e_x", "q.mod.compound_bow_trans_1st_right_pos_e_y", "q.mod.compound_bow_trans_1st_right_pos_e_z"]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": ["q.mod.compound_bow_trans_1st_left_rot_s_x", "q.mod.compound_bow_trans_1st_left_rot_s_y", "q.mod.compound_bow_trans_1st_left_rot_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_left_rot_e_x", "q.mod.compound_bow_trans_1st_left_rot_e_y", "q.mod.compound_bow_trans_1st_left_rot_e_z"]
+					},
+					"position": {
+						"0.0": ["q.mod.compound_bow_trans_1st_left_pos_s_x", "q.mod.compound_bow_trans_1st_left_pos_s_y", "q.mod.compound_bow_trans_1st_left_pos_s_z"],
+						"0.2": ["q.mod.compound_bow_trans_1st_left_pos_e_x", "q.mod.compound_bow_trans_1st_left_pos_e_y", "q.mod.compound_bow_trans_1st_left_pos_e_z"]
+					}
+				},
+				"arrow_reload": {
+					"scale": 0
+				}
+			}
+		}
+	}
+}

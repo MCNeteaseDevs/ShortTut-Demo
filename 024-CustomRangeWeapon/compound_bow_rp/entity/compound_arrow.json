@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "demo:compound_arrow_entity",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/compound_bow"
+      },
+      "geometry": {
+        "default": "geometry.compound_arrow"
+      },
+      "animations": {
+        "move": "animation.compound_arrow.move",
+        "fit": "animation.compound_arrow.demo_fit"
+      },
+      "scripts": {
+        "animate": [
+          "move",
+          "fit"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.compound_arrow"
+      ]
+    }
+  }
+}

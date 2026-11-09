@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.compound_arrow.demo_fit": {
+      "loop": true,
+      "bones": {
+        "body": {
+          "scale": [
+            0.45,
+            0.45,
+            0.45
+          ]
+        }
+      }
+    }
+  }
+}

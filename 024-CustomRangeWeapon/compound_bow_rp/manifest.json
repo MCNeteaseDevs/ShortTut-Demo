@@ -1,0 +1,29 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Compound Bow Resource Pack",
+    "description": "5分钟短教程 Vol.24 自定义远程武器 Demo",
+    "uuid": "3241d285-1365-447f-a5c0-eb266a554c36",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "258c3dac-0cca-4d3c-90a0-01d35ad4e119",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

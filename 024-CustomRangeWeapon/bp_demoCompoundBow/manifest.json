@@ -1,0 +1,39 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Compound Bow Behavior Pack",
+    "description": "5分钟短教程 Vol.24 自定义远程武器 Demo",
+    "uuid": "f1bb66af-7dc6-4e58-b89c-83806f176b21",
+    "version": [
+      0,
+      0,
+      1
+    ],
+    "min_engine_version": [
+      1,
+      18,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "04f1a14f-c199-409a-995d-89635bb79772",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "3241d285-1365-447f-a5c0-eb266a554c36",
+      "version": [
+        0,
+        0,
+        1
+      ]
+    }
+  ]
+}

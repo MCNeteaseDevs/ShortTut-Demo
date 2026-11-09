@@ -1,0 +1,86 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.compound_bow.core": {
+			"loop": "hold_on_last_frame",
+			"bones": {
+				"core": {
+					"rotation": [39.2, "14.5 + (query.life_time * -60.0 + variable.time_offset)", -39.2]
+				}
+			}
+		},
+		"animation.compound_bow.drop": {
+			"loop": true,
+			"bones": {
+				"compound_bow_drill": {
+					"rotation": ["-q.mod.compound_bow_drop_yaw", 0, -90],
+					"position": [-4, -12.5, 0],
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.compound_bow.deployment": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"arrow": {
+					"scale": "q.mod.compound_bow_arrow_loaded || (!q.mod.compound_bow_transition && q.mod.compound_bow_reload)"
+				},
+				"arrow_reload": {
+					"scale": "!q.mod.compound_bow_transition && q.mod.compound_bow_reload"
+				},
+				"torch": {
+					"scale": "q.mod.compound_bow_deployment_torch > 0"
+				},
+				"sight1": {
+					"scale": "q.mod.compound_bow_deployment_sight == 1"
+				},
+				"sight2": {
+					"scale": "q.mod.compound_bow_deployment_sight == 2"
+				},
+				"sight3": {
+					"scale": "q.mod.compound_bow_deployment_sight == 3"
+				},
+				"sight4": {
+					"scale": "q.mod.compound_bow_deployment_sight == 4"
+				},
+				"core": {
+					"scale": "q.mod.compound_bow_deployment_core > 0"
+				},
+				"shelf0": {
+					"scale": "q.mod.compound_bow_deployment_shelf == 0"
+				},
+				"shelf1": {
+					"scale": "q.mod.compound_bow_deployment_shelf == 1"
+				},
+				"shelf2": {
+					"scale": "q.mod.compound_bow_deployment_shelf == 2"
+				},
+				"string0": {
+					"scale": "q.mod.compound_bow_deployment_string == 0"
+				},
+				"string1": {
+					"scale": "q.mod.compound_bow_deployment_string == 1"
+				},
+				"assist_base": {
+					"scale": "q.mod.compound_bow_deployment_assist > 0 && q.mod.compound_bow_deployment_assist < 5"
+				},
+				"assist1": {
+					"scale": "q.mod.compound_bow_deployment_assist == 1"
+				},
+				"assist2": {
+					"scale": "q.mod.compound_bow_deployment_assist == 2"
+				},
+				"assist3": {
+					"scale": "q.mod.compound_bow_deployment_assist == 3"
+				},
+				"assist4": {
+					"scale": "q.mod.compound_bow_deployment_assist == 4"
+				},
+				"assist5": {
+					"scale": "q.mod.compound_bow_deployment_assist == 5"
+				}
+			}
+		}
+	}
+}

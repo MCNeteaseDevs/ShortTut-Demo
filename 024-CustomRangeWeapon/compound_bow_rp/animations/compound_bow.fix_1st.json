@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.compound_bow.fix_1st": {
+      "loop": true,
+      "override_previous_animation": true,
+      "bones": {
+        "rightItem": {
+          "position": [
+            "q.mod.compound_bow_fix_offset_x",
+            0,
+            "q.mod.compound_bow_fix_offset_z"
+          ]
+        },
+        "leftItem": {
+          "position": [
+            "q.mod.compound_bow_fix_offset_x",
+            0,
+            "q.mod.compound_bow_fix_offset_z"
+          ],
+          "scale": [
+            0.45,
+            0.45,
+            0.45
+          ]
+        },
+        "arrow_reload": {
+          "scale": [
+            0,
+            0,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

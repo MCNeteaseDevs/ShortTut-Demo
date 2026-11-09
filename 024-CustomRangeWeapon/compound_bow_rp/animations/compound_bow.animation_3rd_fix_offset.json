@@ -1,0 +1,17 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.compound_bow.3rd_fix_offset": {
+      "loop": true,
+      "override_previous_animation": true,
+      "bones": {
+        "rightItem": {
+          "scale": 0.6
+        },
+        "leftItem": {
+          "scale": 0.6
+        }
+      }
+    }
+  }
+}

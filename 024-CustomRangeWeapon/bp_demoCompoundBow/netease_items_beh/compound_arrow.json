@@ -1,0 +1,17 @@
+{
+  "format_version": "1.10",
+  "minecraft:item": {
+    "description": {
+      "identifier": "demo:compound_arrow",
+      "category": "Nature",
+      "custom_item_type": "projectile_item"
+    },
+    "components": {
+      "minecraft:max_stack_size": 64,
+      "netease:show_in_hand": {
+        "value": false
+      },
+      "netease:projectile": "demo:compound_arrow_entity"
+    }
+  }
+}
