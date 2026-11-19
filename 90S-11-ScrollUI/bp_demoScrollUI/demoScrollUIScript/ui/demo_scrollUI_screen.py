@@ -10,49 +10,52 @@ ROW_HEIGHT = 20
 # 编辑器里拖进去的 scroll_view 控件名
 SCROLL_VIEW_PATH = "/center_panel/scroll_list"
 PERCENT_LABEL_PATH = "/center_panel/percent_label"
-DETAIL_LABEL_PATH = "/center_panel/detail_label"
+HINT_LABEL_PATH = "/center_panel/hint_label"
 
 # 演示数据：40 条，足够超出可视区域
 ITEM_NAMES = [
-    u"钻石剑", u"苹果", u"铁镐", u"面包", u"火把", u"箭", u"木棍", u"煤炭",
-    u"铁锭", u"金锭", u"绿宝石", u"指南针", u"时钟", u"地图", u"书", u"骨头",
-    u"线", u"羽毛", u"火药", u"小麦", u"胡萝卜", u"马铃薯", u"牛肉", u"皮革",
-    u"甘蔗", u"南瓜", u"西瓜", u"蛋糕", u"曲奇", u"蜂蜜瓶", u"鸡蛋", u"牛奶",
-    u"熟鱼", u"生鱼", u"红石", u"青金石", u"石英", u"下界合金", u"末影珍珠", u"潜影壳"
+    "钻石剑", "苹果", "铁镐", "面包", "火把", "箭", "木棍", "煤炭",
+    "铁锭", "金锭", "绿宝石", "指南针", "时钟", "地图", "书", "骨头",
+    "线", "羽毛", "火药", "小麦", "胡萝卜", "马铃薯", "牛肉", "皮革",
+    "甘蔗", "南瓜", "西瓜", "蛋糕", "曲奇", "蜂蜜瓶", "鸡蛋", "牛奶",
+    "熟鱼", "生鱼", "红石", "青金石", "石英", "下界合金", "末影珍珠", "潜影壳"
 ]
+
+# 按 4 键依次跳到的条目下标，用来演示 SetScrollViewPos(下标 × 行高)
+# 内容总高 40 × 20 = 800，窗口 120，能滚的范围是 0~680，所以取的下标都留在范围内
+LOCATE_TARGETS = [6, 19, 26]
 
 
 class ScrollUIScreen(ScreenNode):
     """
     滚动列表演示
 
+    - 界面上没有控制按钮，滚动只由快捷键（客户端 System 转发进来）驱动
     - 列表数据靠 ViewBinder 的集合绑定填进去，不用一个个控件去改
     - 条目数量交给 "#grid.size"，JSON 里 grid 再把它转成 #maximum_grid_items
-    - 滚动位置用 ScrollViewUIControl 的百分比 / 像素接口
     """
 
     def __init__(self, namespace, name, param):
         ScreenNode.__init__(self, namespace, name, param)
         self.mRows = []
         for index, name in enumerate(ITEM_NAMES):
-            self.mRows.append(u"%02d  %s" % (index + 1, name))
-        self.mSelected = -1
+            self.mRows.append("%02d  %s" % (index + 1, name))
         self.mScrollView = None
         self.mPercent = -1
         self.mTick = 0
+        self.mLocateIndex = -1
 
     # ---------- 生命周期 ----------
 
     def Create(self):
-        # 缓存 ScrollViewUIControl，后面的滚动都靠它
         self.mScrollView = self._GetScrollView()
         if not self.mScrollView:
             logger.info("ScrollUIScreen scroll_view not found at %s", SCROLL_VIEW_PATH)
-        self._SetLabelText(PERCENT_LABEL_PATH, u"滚动位置 0％")
-        self._SetLabelText(DETAIL_LABEL_PATH, u"点一下列表里的条目")
+        self._RefreshPercentLabel(0)
+        self._SetLabelText(HINT_LABEL_PATH, "1顶部 2底部 3下10％ 4定位 5读取 6内容")
 
     def Update(self):
-        # 每 6 帧（约 0.2 秒）读一次百分比，这样拖动滚动条时标签也能跟上
+        # 每 6 帧（约 0.2 秒）读一次百分比，滚轮 / 拖滚动条时下面那行也能跟上
         self.mTick += 1
         if self.mTick % 6 != 0:
             return
@@ -73,60 +76,88 @@ class ScrollUIScreen(ScreenNode):
     def OnBindRowText(self, index):
         if index < 0 or index >= len(self.mRows):
             return ""
-        # 注意：集合绑定要返回 str，直接返回 unicode 的话文字不会显示
-        return self.mRows[index].encode("utf-8")
+        return self.mRows[index]
 
-    # ---------- 列表条目 ----------
+    # ---------- 给快捷键调的入口 ----------
 
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnRowClick(self, args):
-        index = args.get("#collection_index", -1)
-        if not isinstance(index, int):
-            try:
-                index = int(index)
-            except (TypeError, ValueError):
-                return
-        if index < 0 or index >= len(self.mRows):
-            return
-        self.mSelected = index
-        self._SetLabelText(
-            DETAIL_LABEL_PATH,
-            u"已选 第 %02d 条：%s" % (index + 1, ITEM_NAMES[index])
-        )
-
-    # ---------- 滚动按钮 ----------
-
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnTopClick(self, args):
-        self._SetPercent(0)
-
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnUpClick(self, args):
-        self._SetPercent(self._GetPercent() - 10)
-
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnDownClick(self, args):
-        self._SetPercent(self._GetPercent() + 10)
-
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnBottomClick(self, args):
-        self._SetPercent(100)
-
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnLocateClick(self, args):
-        if self.mSelected < 0:
-            self._SetLabelText(DETAIL_LABEL_PATH, u"先点一条，再定位")
-            return
+    def SetPercent(self, percent):
+        """SetScrollViewPercentValue：按百分比跳，0 顶部、100 底部"""
+        if percent < 0:
+            percent = 0
+        elif percent > 100:
+            percent = 100
         scrollView = self._GetScrollView()
         if not scrollView:
             return
-        # 像素接口：把这一条的顶部滚到窗口最上面
-        scrollView.SetScrollViewPos(self.mSelected * ROW_HEIGHT)
-        self._SetLabelText(DETAIL_LABEL_PATH, u"已定位 第 %02d 条" % (self.mSelected + 1))
+        scrollView.SetScrollViewPercentValue(percent)
+        self.mPercent = percent
+        self._RefreshPercentLabel(percent)
+        self._SetLabelText(
+            HINT_LABEL_PATH,
+            "SetScrollViewPercentValue(%d)" % percent
+        )
 
-    @ViewBinder.binding(ViewBinder.BF_ButtonClickUp)
-    def OnCloseClick(self, args):
-        self.Close()
+    def StepPercent(self, delta):
+        """先 Get 再 Set：读当前百分比，加减后再写回去"""
+        percent = self._GetPercent()
+        if percent < 0:
+            return
+        target = percent + delta
+        if target < 0:
+            target = 0
+        elif target > 100:
+            target = 100
+        self.SetPercent(target)
+        self._SetLabelText(
+            HINT_LABEL_PATH,
+            "Get:%d Set:%d" % (percent, target)
+        )
+
+    def LocateSelected(self):
+        """SetScrollViewPos：像素定位，把第 N 条顶到最上面"""
+        self.mLocateIndex = (self.mLocateIndex + 1) % len(LOCATE_TARGETS)
+        index = LOCATE_TARGETS[self.mLocateIndex]
+        scrollView = self._GetScrollView()
+        if not scrollView:
+            return
+        pos = index * ROW_HEIGHT
+        scrollView.SetScrollViewPos(pos)
+        self.mPercent = -1
+        self._SetLabelText(
+            HINT_LABEL_PATH,
+            "SetScrollViewPos(%d x %d = %d)" % (index, ROW_HEIGHT, pos)
+        )
+
+    def ReadPos(self):
+        """GetScrollViewPercentValue + GetScrollViewPos"""
+        scrollView = self._GetScrollView()
+        if not scrollView:
+            return
+        percent = int(scrollView.GetScrollViewPercentValue())
+        pos = scrollView.GetScrollViewPos()
+        self._RefreshPercentLabel(percent)
+        self._SetLabelText(
+            HINT_LABEL_PATH,
+            "Percent:%d Pos:%d" % (percent, int(pos))
+        )
+
+    def ReadContentPath(self):
+        """GetScrollViewContentPath + GetScrollViewContentControl"""
+        scrollView = self._GetScrollView()
+        if not scrollView:
+            return
+        path = scrollView.GetScrollViewContentPath()
+        control = scrollView.GetScrollViewContentControl()
+        if path:
+            # 完整路径太长会顶出面板，只留最后一段
+            path = path.rsplit("/", 1)[-1]
+        self._SetLabelText(
+            HINT_LABEL_PATH,
+            "Content:%s %s" % (
+                path if path else "None",
+                "OK" if control else "None"
+            )
+        )
 
     # ---------- 滚动控件 ----------
 
@@ -147,20 +178,13 @@ class ScrollUIScreen(ScreenNode):
             return -1
         return int(scrollView.GetScrollViewPercentValue())
 
-    def _SetPercent(self, percent):
-        if percent < 0:
-            percent = 0
-        elif percent > 100:
-            percent = 100
-        scrollView = self._GetScrollView()
-        if not scrollView:
-            return
-        scrollView.SetScrollViewPercentValue(percent)
-        self.mPercent = percent
-        self._RefreshPercentLabel(percent)
-
     def _RefreshPercentLabel(self, percent):
-        self._SetLabelText(PERCENT_LABEL_PATH, u"滚动位置 %d％" % percent)
+        scrollView = self._GetScrollView()
+        pos = int(scrollView.GetScrollViewPos()) if scrollView else 0
+        self._SetLabelText(
+            PERCENT_LABEL_PATH,
+            "滚动位置 %d%%  像素 %d" % (percent, pos)
+        )
 
     def _SetLabelText(self, path, text):
         control = self.GetBaseUIControl(path)
@@ -169,7 +193,3 @@ class ScrollUIScreen(ScreenNode):
         label = control.asLabel()
         if label:
             label.SetText(text)
-
-    # 调用该函数可以关闭UI界面
-    def Close(self):
-        clientApi.PopScreen()
